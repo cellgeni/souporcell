@@ -10,12 +10,13 @@ cpu=${1?Need CPU count} #cpu number inputted from submit.sh
 dir=${2?Need directory} #sample ID that is also directory
 thek=${3?Need k} #donor number inputted from submit.sh
 
-cd ../data/$dir #change to sample directory
 psb=possorted_bam.bam #bam filename
 bcd=barcodes.tsv #barcodes filename
 outdir=soc #souporcell output dir name
 remap=True
 umi=True
+
+cd ../data/$dir #change to sample directory
 
 ###################### DONT CHANGE OPTIONS BELOW THIS LINE ###########################
 
