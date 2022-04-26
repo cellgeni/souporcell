@@ -4,10 +4,10 @@ set -euo pipefail
 
 #run this from data directory
 
-sf=../actions/irods.txt
-barcode_path=filtered_feature_bc_matrix/barcodes.tsv.gz
-bam_file=gex_possorted_bam.bam
-index_file=gex_possorted_bam.bam.bai
+sf=../actions/irods.txt #tab separated file containing sampleIDs and corresponding irods path to directory
+barcode_path=filtered_feature_bc_matrix/barcodes.tsv.gz #path to filtered barcodes file within irods directory
+bam_file=possorted_bam.bam #name of bam file within irods directory
+index_file=possorted_bam.bam.bai #name of index file within irods directory
 
 ###################### DONT CHANGE OPTIONS BELOW THIS LINE ###########################
 
