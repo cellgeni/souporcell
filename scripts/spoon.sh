@@ -11,10 +11,11 @@ dir=${2?Need directory} #sample ID that is also directory
 thek=${3?Need k} #donor number inputted from submit.sh
 
 cd ../data/$dir #change to sample directory
-psb=removed.bam #bam filename
+psb=possorted_bam.bam #bam filename
 bcd=barcodes.tsv #barcodes filename
-
 outdir=soc #souporcell output dir name
+remap=True
+umi=True
 
 ###################### DONT CHANGE OPTIONS BELOW THIS LINE ###########################
 
@@ -32,5 +33,5 @@ singularity exec -B /lustre -B /nfs \
       -k $thek                \
       --common_variants $cv   \
       -t $CPU -o $outdir      \
-      --skip_remap True     \
-      --no_umi True
+      --skip_remap $remap     \
+      --no_umi $umi
