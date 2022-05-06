@@ -26,7 +26,7 @@ umi=True
 echo $dir ok
 mkdir $outdir
 
-singularity exec -B /lustre -B /nfs \
+/software/singularity-v3.6.4/bin/singularity exec -B /lustre -B /nfs \
       $im souporcell_pipeline.py \
       -i $psb                 \
       -b $bcd                 \

@@ -14,6 +14,8 @@ work - contains logs subdirectory which stores all the log files for running sou
 
 ### Getting Data
 
+Please note this getting data section is specific to the Sanger IRODs system. If you are not getting data from IRODs on the FARM ignore this step.
+
 Ensure the file `irods.txt` contains 2 tab separated fields. The first contains a sample IDs and the second contains a path to the location on irods. 
 Each row contains a single sample ID and its corresponding irods path as shown below:
 
