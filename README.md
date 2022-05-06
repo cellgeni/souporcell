@@ -62,4 +62,8 @@ cd shared_samples
 ../actions/twosubmit.sh
 ```
 
-If you need to change the donor value, edit the `twosubmit.sh` script 
+If you need to change the donor shared value, edit the `twosubmit.sh` script
+
+Please note if you are comparing samples that had souporcell ran with different k values, use the larger k value for n shared. Also ensure that the 
+samples with the smaller k value are submitted in the second `cat samplefile` so that there are no indexing errors. This will mean having 2 sample 
+files that are read.
