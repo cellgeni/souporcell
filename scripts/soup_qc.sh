@@ -3,9 +3,6 @@
 set -euo pipefail
 
 for sample in *; do
-  #echo "##############################################################"
-  #echo "Start of infomation on Sample: ${sample}";
-  #echo "##############################################################"
   ##Get ambient RNA percentage
   ambient=$(cat $sample/ambient_rna.txt | cut -d " " -f 5 | cut -c 1-4)
   echo "${ambient}% ambient RNA" > "${sample}_qc.txt"
@@ -22,7 +19,4 @@ for sample in *; do
       u_count=$(grep $cluster $sample/clusters.tsv | { grep unassigned || true; } | wc -l);
       printf "%-20s %-20s %-20s %-20s %-20s\n" "${cluster}" "${count}" "${d_count}" "${s_count}" "${u_count}" >> "${sample}_qc.txt"; 
   done
-  #echo "##############################################################"
-  #echo "End of information on sample: ${sample}";
-#echo "##############################################################"
 done
