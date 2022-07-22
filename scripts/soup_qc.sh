@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+##Run in results directory where each subdirectory is a sample name with the souporcell output for that sample within
+
 for sample in *; do
   ##Get ambient RNA percentage
   ambient=$(cat $sample/ambient_rna.txt | cut -d " " -f 5 | cut -c 1-4)
