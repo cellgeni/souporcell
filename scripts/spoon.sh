@@ -4,7 +4,7 @@ set -euo pipefail
 
 fa=  #add to approriate genome i.e. /nfs/cellgeni/STAR/human/2020A/GRCh38_v32_modified.fa
 im=/nfs/cellgeni/singularity/images/souporcell.sif #souporcell singularity image 
-cv=/lustre/scratch117/cellgen/cellgeni/simon/altered_vcfs/chr_filtered_2p_1kgenomes_GRCh38.vcf #change to appropriate vcf
+cv=  #add to appropriate vcf i.e. /nfs/cellgeni/simon/altered_vcfs/chr_filtered_2p_1kgenomes_GRCh38.vcf
 
 cpu=${1?Need CPU count} #cpu number inputted from submit.sh
 dir=${2?Need directory} #sample ID that is also directory
