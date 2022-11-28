@@ -53,6 +53,8 @@ then edit the `spoon.sh` script.
 
 Jobs will be submitted to the FARM, they can be monitored with the command `bjobs` or you can look at the log and error files within the `logs` subdirectory.
 
+**Note on compressed (`.gz`) files**: both VCF and barcodes files need to be extracted if they are compressed before running `spoon.sh`. i.e.: for `barcode.tsv.gz` run `gunzip barcode.tsv.gz` to extract the barcode file.
+
 ### Running shared_samples.py
 
 Run the script `twosubmit.sh` inside the `shared_samples` directory. I recommend doing this on a screen session.
