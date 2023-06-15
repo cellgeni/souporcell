@@ -19,7 +19,7 @@ psb=possorted_bam.bam #bam filename
 bcd=barcodes.tsv #barcodes filename
 outdir=soc #souporcell output dir name
 remap=True
-umi=True
+no_umi=False
 
 ###################### DONT CHANGE OPTIONS BELOW THIS LINE ###########################
 
@@ -44,5 +44,5 @@ mkdir $outdir
       $common_or_known        \
       -t $cpu -o $outdir      \
       --skip_remap $remap     \
-      --no_umi $umi
+      --no_umi $no_umi
 
