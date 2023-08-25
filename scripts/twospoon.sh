@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-im=/nfs/cellgeni/singularity/images/souporcell.sif #souporcell singularity image
+im=/nfs/cellgeni/singularity/images/souporcell_v2.5.sif #souporcell singularity image
 mnt=/lustre #which filesystems to mount
 
 s1=${1?Need sample1} #sample1 (inputted from twosubmit.sh)
