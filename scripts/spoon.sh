@@ -3,7 +3,7 @@
 set -euo pipefail
 
 fa=  #add to approriate genome i.e. /nfs/cellgeni/STAR/human/2020A/GRCh38_v32_modified.fa
-im=/nfs/cellgeni/singularity/images/souporcell.sif #souporcell singularity image 
+im=/nfs/cellgeni/singularity/images/souporcell_v2.5.sif #souporcell singularity image 
 vcf= #add to appropriate vcf i.e. /nfs/cellgeni/pipeline-files/souporcell/reference_vcfs/chr_filtered_2p_1kgenomes_GRCh38.vcf
 
 # by default the pipeline will use common variant loci or known variant loci vcf
