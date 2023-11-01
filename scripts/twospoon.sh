@@ -17,5 +17,5 @@ dir2=../data/$s2/soc #souporcell output directory for sample 2
 [[ ! -d $dir1 ]] && echo "Not a directory $dir1" && false
 [[ ! -d $dir2 ]] && echo "Not a directory $dir2" && false
 
-/software/singularity-v3.6.4/bin/singularity exec -B $mnt $im shared_samples.py -1 $dir1 -2 $dir2 -n $nshared > out$nshared.$s1-$s2 2> err$nshared.$s1-$s2
+/software/singularity/v3.10.0/bin/singularity exec -B $mnt $im shared_samples.py -1 $dir1 -2 $dir2 -n $nshared > out$nshared.$s1-$s2 2> err$nshared.$s1-$s2
 
