@@ -1,3 +1,8 @@
+
+| <h1>⚠️ This repo has been archived. Please use [nf-demultiplex](https://github.com/cellgeni/nf-demultiplex) </h1>|
+| ----------------------------------------------------------------------------------------------- |
+
+
 # Souporcell
 Repo containing our scripts for running souporcell
 
